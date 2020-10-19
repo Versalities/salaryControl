@@ -59,7 +59,7 @@ export default class SalaryCalculator extends React.Component {
                 return {
                     monthly: calcValue,
                     daily: calcValue / 20,
-                    hourly: calcValue / 180
+                    hourly: calcValue / 160
                 };
             case Modes[2]:
                 return {
@@ -69,7 +69,7 @@ export default class SalaryCalculator extends React.Component {
                 };
             case Modes[3]:
                 return {
-                    monthly: calcValue * 180,
+                    monthly: calcValue * 160,
                     daily: calcValue * 8,
                     hourly: calcValue     
                 };
