@@ -1,0 +1,4 @@
+## Info
+
+Salary Control component
+
