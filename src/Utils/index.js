@@ -1,5 +1,5 @@
 export function formatNumber(num) {
-    let workArr = ('' + num).split('').reverse();
+    let workArr = ('' + Math.round(num)).split('').reverse();
     let formattedArray = [];
     let count = 0;
 
