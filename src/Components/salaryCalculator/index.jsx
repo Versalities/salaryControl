@@ -23,6 +23,7 @@ export default class SalaryCalculator extends React.Component {
             ndfl: true,
             data: {
                 monthly: 0,
+                minimum: 0,
                 daily: 0,
                 hourly: 0
             }
@@ -58,18 +59,28 @@ export default class SalaryCalculator extends React.Component {
             case Modes[0]:
                 return {
                     monthly: calcValue,
+                    minimum: data.minimum,
                     daily: calcValue / 20,
                     hourly: calcValue / 160
+                };
+            case Modes[1]:
+                return {
+                    monthly: data.monthly,
+                    minimum: calcValue,
+                    daily: data.daily,
+                    hourly: data.hourly
                 };
             case Modes[2]:
                 return {
                     monthly: calcValue * 20,
+                    minimum: data.minimum,
                     daily: calcValue,
                     hourly: calcValue / 8
                 };
             case Modes[3]:
                 return {
                     monthly: calcValue * 160,
+                    minimum: data.minimum,
                     daily: calcValue * 8,
                     hourly: calcValue     
                 };
