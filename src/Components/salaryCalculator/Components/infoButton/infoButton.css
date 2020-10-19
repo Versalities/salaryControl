@@ -1,0 +1,11 @@
+.infoButtonContainer {
+    position: relative;
+}
+
+.infoField {
+    position: absolute;
+    background-color: blueviolet;
+    color:white;
+    padding:10px;
+    z-index: 2;
+}
